@@ -633,11 +633,11 @@ function! NextAlternate(bang)
    endif
 endfunction
 
-comm! -nargs=? -bang A call AlternateFile("n<bang>", <f-args>)
-comm! -nargs=? -bang AS call AlternateFile("h<bang>", <f-args>)
-comm! -nargs=? -bang AV call AlternateFile("v<bang>", <f-args>)
-comm! -nargs=? -bang AT call AlternateFile("t<bang>", <f-args>)
-comm! -nargs=? -bang AN call NextAlternate("<bang>")
+comm! -nargs=? -bang AlterA call AlternateFile("n<bang>", <f-args>)
+comm! -nargs=? -bang AlterS call AlternateFile("h<bang>", <f-args>)
+comm! -nargs=? -bang AlterV call AlternateFile("v<bang>", <f-args>)
+comm! -nargs=? -bang AlterT call AlternateFile("t<bang>", <f-args>)
+comm! -nargs=? -bang AlterN call NextAlternate("<bang>")
 
 " Function : BufferOrFileExists (PRIVATE)
 " Purpose  : determines if a buffer or a readable file exists
